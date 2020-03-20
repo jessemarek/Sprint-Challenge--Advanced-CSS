@@ -9,9 +9,15 @@ nav {
     color: @header-font-color;
     border: 1px solid @nav-border;
 
-    h1 {
+    @media @mobile {
+        position: initial;
+    }
+
+    .page-title {
+        width: 60%;
         font-size: 4rem;
         text-align: center;
+        margin: 1% auto;
     }
 
     .nav-links{
@@ -19,7 +25,11 @@ nav {
         width: 40%;
         margin: 0 auto;
         padding: 1% 0;
-        font-size: 2rem;        
+        font-size: 2rem; 
+        
+        @media @mobile {
+            width: 80%;
+        }
 
         a {
             text-decoration: none;
