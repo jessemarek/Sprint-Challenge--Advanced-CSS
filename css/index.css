@@ -203,7 +203,7 @@ nav .nav-links a {
   color: #23293B;
   position: relative;
 }
-nav .nav-links a:after {
+nav .nav-links a::after {
   content: "";
   display: block;
   width: 0;
@@ -214,7 +214,7 @@ nav .nav-links a:after {
   background: #23293B;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
-nav .nav-links a:hover:after {
+nav .nav-links a:hover::after {
   width: 100%;
   left: 0;
 }
