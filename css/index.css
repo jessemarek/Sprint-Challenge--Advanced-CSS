@@ -1,3 +1,4 @@
+/* Nav Links Animation */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +161,50 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #F6F6F6;
+  color: #23293B;
+  border: 1px solid #F1F1F1;
+}
+nav h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+nav .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1% 0;
+  font-size: 2rem;
+}
+nav .nav-links a {
+  text-decoration: none;
+  color: #23293B;
+  position: relative;
+}
+nav .nav-links a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  background: #23293B;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+nav .nav-links a:hover:after {
+  width: 100%;
+  left: 0;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +214,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro {
+  margin-top: 10%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +259,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: 30%;
+  background: #22283A;
+  color: #F1F1F1;
+  border: 2px solid #22283A;
+  border-radius: 8px;
+  padding: 2% 3%;
+  font-size: 1.6rem;
+  text-align: center;
+  outline: none;
+}
+.home .walk .walk-text .btn:hover {
+  background: #F1F1F1;
+  color: #22283A;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
