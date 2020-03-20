@@ -170,6 +170,7 @@ nav {
   background: #F6F6F6;
   color: #23293B;
   border: 1px solid #F1F1F1;
+  opacity: 0.9;
 }
 @media (max-width: 500px) {
   nav {
@@ -228,7 +229,7 @@ footer {
   align-items: center;
 }
 .home .intro {
-  margin-top: 10%;
+  margin-top: 15.5%;
 }
 @media (max-width: 500px) {
   .home .intro {
