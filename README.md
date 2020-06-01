@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    *Adaptive layouts accommodate different devices at specific breakpoints in design. For example, an adaptive website may have hardcoded pixels used for layout and use media queries for different screen sizes and devices.*
+    
+    *Responsive layouts combine features of fixed, adaptive, and fluid websites into one layout. Media queries are used to constrain responsive units so that as the viewport expands or shrinks, you get a site that looks and functions across different devices and screen sizes.*
+
 2. Describe what it means to be mobile first vs desktop first.
 
+    *Mobile first design is when you style your site for a mobile device first and then make style changes for other devices like tablet and desktop after. You will use the min-width property with any media queries with this approach.*
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+    
+    *Adding a `font-size: 62.5%` to the HTML tag will convert the browser's default font-size (usually 16px) to a base 10 number. This makes calculations for font sizes using rem units easier. For example to make a font 18px you would use 1.8rem.*
 
 4. How would you describe preprocessing to someone new to CSS?
 
+    *Preprocessing allows you to write your CSS with nesting and variables. It makes your CSS more organized and since the nesting structure follows that of html it can be a little easier to target the correct elements for your styles. Variables allow you to easily change styles that might be used in several places throughout a large site by changing the value in one place.*
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    *My favorite concept has to be Parametric Mixins. It makes using repetitive code blocks that you might want to adjust some of the styles for on multiple items in your layout a breeze.*
+
+    *The concept that gives me the most trouble is probably setting up pseudo selectors properly due to the nesting of the code.*
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
